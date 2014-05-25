@@ -1,0 +1,8 @@
+#banner{
+	background: transparent url(imamges/background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: auto;
+	height: 420px;
+	text-indent: 9999px;
+}

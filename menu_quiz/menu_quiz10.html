@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>M-Learning Bahasa</title>
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+	<link rel="stylesheet"  href="../css/themes/default/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" href="../css/themese/default/background.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+
+	<script src="../js/question.js"></script>
+    <script src="../js/back-to-top.js"></script>
+	
+	<link rel="stylesheet" href="../css/themes4/theme_pink.min.css" />
+	<link rel="stylesheet" href="../css/themes4/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<script type="application/javascript" src="../js/zoom/iscroll.js"></script>
+	
+			<script language="JavaScript">
+<!--
+
+var numQues = 10;
+
+var answers = new Array(10);
+answers[0] = "Jangan";
+answers[1] = "Harap";
+answers[2] = "Maaf";
+answers[3] = "Semoga";
+answers[4] = "Harap";
+answers[5] = "Jangan";
+answers[6] = "Jangan";
+answers[7] = "Maaf";
+answers[8] = "Jangan";
+answers[9] = "Semoga";
+
+function getScore(form) {
+  var score = 0;
+
+  for (i=0; i<numQues; i++) {
+    if (form.elements[i].value == answers[i]) {
+      score++;
+    }
+  }
+
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+
+}
+
+// -->
+</script>
+
+	
+	<!-- Zoom -->
+	<script type="text/javascript">
+
+		var myScroll;
+		function loaded() {
+			myScroll = new iScroll('wrapper', { zoom:true });
+		}
+
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+		document.addEventListener('DOMContentLoaded', loaded, false);
+
+	</script>
+	<!-- End -->
+</head>
+	<body>
+	
+		<div id="kuis10" data-role="page" data-position="fixed" data-theme="a">
+			
+		<div data-role="header">
+			<a rel="external" data-rel="Back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-back" onClick="myBack();">Back</a>
+			
+			<script>
+			function myBack() {
+				var y;
+				if (confirm("Do you want to leave this page ?") == true) {
+					y = window.location.href="../menu_quiz.html";
+				} else {
+					y = "You pressed Cancel!";
+				}
+				document.getElementById("demo").innerHTML = y;
+			}
+			</script>
+			
+			<h1>Quiz</h1>
+			
+			<a href="#popupMenu" data-rel="popup" data-transition="slidedown" class="ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-bars" >Menu</a>
+			<div data-role="popup" id="popupMenu" data-theme="b">
+				<ul data-role="listview" data-inset="true" style="min-width:210px;">
+					<li data-role="list-divider">Choose an action</li>
+					<li><a rel="external" onclick="home()">Home</a></li>
+					<li><a rel="external" onClick="myLesson();">Lesson 10</a></li>
+				</ul>
+			</div>
+			
+			<script>
+			function home() {
+				var x;
+				if (confirm("Do you want to leave this page ?") == true) {
+					x = window.location.href="../index.html";
+				} else {
+					x = "You pressed Cancel!";
+				}
+				document.getElementById("demo").innerHTML = x;
+			}
+			</script>
+			
+			<script>
+			
+			function myLesson() {
+				var x;
+				if (confirm("Do you want to leave this page ?") == true) {
+					x = window.location.href="../menu_lesson/menu_lesson10.html";
+				} else {
+					x = "You pressed Cancel!";
+				}
+				document.getElementById("demo").innerHTML = x;
+			}
+			</script>
+		</div>
+		
+		<p style="color:red" > The quiz is take 15 minutes ,if you run out of time you will be redirected to home page, you may see the remains time bellow.</p>
+	<span id="countdown" class="timer"></span>
+		<script type="text/javascript">
+
+
+		function secondPassed() {
+			var minutes = Math.round((seconds - 30)/60);
+			var remainingSeconds = seconds % 60;
+			if (remainingSeconds < 10) {
+				remainingSeconds = "0" + remainingSeconds;  
+			}
+			document.getElementById('countdown').innerHTML = minutes + ":" + remainingSeconds;
+			if (seconds == 0) {
+				clearInterval(countdownTimer);
+				//document.getElementById('countdown').innerHTML = function timer();
+				document.getElementById('countdown').innerHTML = (timer());
+			} else {
+				seconds--;
+			}
+			
+		}
+		var countdownTimer = setInterval('secondPassed()', 1000);
+
+		var seconds = 900;
+
+		function timer(){
+			{alert('Time out')};
+			window.location.href="../index.html";
+		}
+
+		</script>
+		
+		<h2>Quiz </h2>
+			<p align ="justify">Complete these following question using the question words <i>maaf</i>, <i>Jangan</i>, <i>Semoga</i> or <i>Harap</i>.</p>
+			<p style="color:red"> Notes : please, use the uppercase for the first letter on answer. </p>
+			<p> Example : </br>
+			Question :..... Billy menginap?</br>
+			Answer : <b>Di mana </b></p></br>
+			
+			
+
+
+
+								<form name="quiz">
+								1. .... Berenang di pantai itu.<br>
+								<input type="text" name="q1" size=15 value="">
+								<p>
+
+								2. ..... masuk ruangan dengan tenang.<br>
+								<input type="text" name="q2" size=15 value="">
+								<p>
+
+								3. .... , saya memecahkan vas bungamu<br>
+								<input type="text" name="q3" size=15 value="">
+								<p>
+
+								4. ..... besok tidak hujan<br>
+								<input type="text" name="q4" size=15 value="">
+								<p>
+
+								5. .... Tenang , ada ujian<br>
+								<input type="text" name="q5" size=15 value="">
+								<p>
+
+								6. Anda .... membuang sampah sembarangan<br>
+								<input type="text" name="q6" size=15 value="">
+								<p>
+
+								7. ..... cepat sembuh.<br>
+								<input type="text" name="q7" size=15 value="">
+								<p>
+
+								8. ..... , saya harus pergi.<br>
+								<input type="text" name="q8" size=15 value="">
+								<p>
+
+								9. .... Tidur larut malam.<br>
+								<input type="text" name="q9" size=15 value="">
+								<p>
+
+								10. .... kita bertemu lagi.<br>
+								<input type="text" name="q10" size=15 value="">
+								<p>
+
+								<input type="button" value="Get score" onClick="getScore(this.form)">
+								<input type="reset" value="Clear"><p>
+								Score = <input type=text size=15 name="percentage"><br>
+								<!--Correct answers:<br>
+								<textarea name="solutions" wrap="virtual" rows="4" cols="40"></textarea> -->
+								</form>
+
+		<div data-role="footer" data-position="fixed">
+        	<center><font size="-5">Copyright@2014 Learn Bahasa</font></center>
+        </div>
+	</div>
+	</body>
+</html>

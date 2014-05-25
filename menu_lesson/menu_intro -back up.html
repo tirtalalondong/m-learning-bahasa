@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>M-Learning Bahasa</title>
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+	<link rel="stylesheet"  href="../css/themes/default/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" href="../css/themese/default/background.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	
+	<link rel="stylesheet" href="../css/themes4/theme_pink.min.css" />
+	<link rel="stylesheet" href="../css/themes4/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	
+	<script type="text/javascript">
+		var v = document.getElementsByTagName("video")[0];
+		v.play();
+	</script>
+	
+</head>
+	<body>
+	
+	<<!--<div id="pronounce" data-role="page" data-position="fixed" data-theme="a">
+			
+		<div data-role="header">
+			<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-back">Back</a>
+		<h1>Learn Bahasa</h1>
+		</div>
+		<h3>Lesson<h3>
+			<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+				<h4>Lesson 1</h4>
+						<ul data-role="listview" data-inset="false">
+						
+								<li><a href="#menu-pronounce">Pronounce</a></li>
+								<li><a href="#menu_intonation">Stress and Intonation Pattern</a></li>
+								
+						</ul>
+			</div>
+	</div> -->
+	
+	<div id="menu-pronounce" data-role="page" data-position="fixed" data-theme="a">
+		<div data-role="header">
+			<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-back">Back</a>
+			<h2>Learn Bahasa</h2>
+		</div>
+		
+		<div data-role="content">
+		<div data-role="collapsible-set" data-theme="a" data-content-theme="a" >
+	
+		<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right">
+			<h3>The Pronuncition of Indonesian Sound</h3>
+				<p align="justify">INDONESIAN has 5 vowels and 22 consonant.In addition some of the vowels have variations if sound or allophone
+				,Indonesian also has three dipthongs,namely ai(ay), oi(oy), and au(aw). The pronounciation of the Indonesian sounds
+				is explained below through comparison with english</p>
+				
+				<table data-role="table" class="ui-responsive">
+				  <thead>
+					<tr>
+					  <th></th>
+					  <th></th>					  
+					</tr>
+				</thead> 
+				  <tbody>
+				  <!-- a -->
+					<tr>
+					<td>1. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/a.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">a</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						
+						<td>&nbsp;</td>
+						<td colspan="2"><b>a</b> is a pronounced similiar to the english <b>[a]</b> in rather.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>a</u>du  </td>
+						<td>[adu] </td>
+						<td><i>Compete</i> </td>
+					</tr>
+					
+					<!-- b -->
+					/*
+					<tr>
+					<td>2. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/b.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">b</button>
+		  			</div>
+					</td>
+					</tr>					
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>b</b> is a pronounced similiar to the english <b>[b]</b> in <i>rather</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td ><u>b</u>awa  </td>
+						<td>[bawa] </td>
+						<td><i>bring</i> </td>
+					</tr>	
+					
+					<tr>
+					<td>3. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/c.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">c</button>
+		  			</div>
+					</td>
+					</tr>
+					
+					<!-- c -->
+					
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>c</b> is a pronounced similiar to the english <b>[ch]</b> in <i>church</i> but it is not aspirated.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>c</u>oba  </td>
+						<td>[coba] </td>
+						<td><i>Try</i> </td>
+					</tr>
+					
+					<!-- d -->
+					<tr>
+					<td>4. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/d.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">d</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>d</b> is a pronounced similiar to the english <b>[d]</b> in <i> daddy</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>d</u>u<u>d</u>k  </td>
+						<td>[duduk] </td>
+						<td><i>Sit</i> </td>
+					</tr>		
+					
+										
+					<!-- e -->
+					<tr>
+					<td>5. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/e.mp3">e</audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">e</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>e</b> is a pronounced similiar to the english <b>[b]</b> in <i>rest</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >kak<u>e</u>k  </td>
+						<td>[kakek] </td>
+						<td><i>grandfather</i> </td>
+					</tr>		
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2">In some cases,<b>e</b> is a pronounced similiar to the english <b>[e]</b> in <i>merid</i>.</td>     
+					</tr>
+					<tr>
+					
+					<!-- e -->
+					<tr>
+					<td>&nbsp; </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/e.mp3">e</audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">e</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >m<u>e</u>rah  </td>
+						<td>[merah] </td>
+						<td><i>Red</i> </td>
+					</tr>
+									
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>e</b> also pronounced similiar to the english <b>[e]</b> in <i>ago</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>e</u>mpat  </td>
+						<td>[empat] </td>
+						<td><i>Four</i> </td>
+					</tr>	
+					
+					<!-- f -->
+					<tr>
+					<td>6. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/f.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">f</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>f</b> is a pronounced similiar to the english <b>[f]</b> in <i>father</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >man<u>f</u>aat  </td>
+						<td>[manfa'at] </td>
+						<td><i>Benefit</i> </td>
+					</tr>
+					
+					<!-- g -->
+					<tr>
+					<td>7. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/g.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">g</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>g</b> is a pronounced similiar to the english <b>[g]</b> in <i>good</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td >ra<u>g</u>am  </td>
+						<td>[ragam] </td>
+						<td><i>Variety</i> </td>
+					</tr>
+					
+					<!-- h -->
+					<tr>
+					<td>8. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/h.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">h</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>e</b> is a pronounced similiar to the english <b>[h]</b> in <i>hall</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>h</u>ijau  </td>
+						<td>[hijau] </td>
+						<td><i>Green</i> </td>
+					</tr>		
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2">Sometimes <b>[h]</b> not pronounced.</td>     
+					</tr>
+					
+					<!-- h -->
+					<tr>
+					<td>&nbsp;</td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/h.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">h</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >ta<u>h</u>un  </td>
+						<td>[taun] </td>
+						<td><i>Year</i> </td>
+					</tr>
+
+					<!-- i -->
+					<tr>
+					<td>9. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/i.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">i</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>i</b> is a pronounced similiar to the english <b>ee</b> <b>[i]</b> in <i>three</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >bab<u>i</u>  </td>
+						<td>[babi] </td>
+						<td><i>Pig</i> </td>
+					</tr>		
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2">In a closed final syllable, <b></b> is pronounced to the english <b>[i]</b> in <i>sit</i>.</td>     
+					</tr>
+					
+					<!-- i -->
+					<tr>
+					<td>&nbsp;</td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/i.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">i</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >bat<u>i</u>k </td>
+						<td>[batik] </td>
+						<td><i>Batik</i> </td>
+					</tr>
+					
+					<!-- j -->
+					<tr>
+					<td>10. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/j.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">j</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>j</b> is a pronounced similiar to the english <b>[j]</b> in <i>july</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>j</u>ga  </td>
+						<td>[juga] </td>
+						<td><i>Also</i> </td>
+					</tr>	
+
+					<!-- k -->
+					<tr>
+					<td>11. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/k.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">k</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+					
+						<td>&nbsp;</td>
+						<td colspan="2"><b>k</b> is a pronounced similiar to the english <b>[k]</b> in <i>kite</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td ><u>k</u>ita  </td>
+						<td>[kita] </td>
+						<td><i>we</i> </td>
+					</tr>		
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>b</u>awa  </td>
+						<td>[bawa] </td>
+						<td><i>bring</i> </td>
+					</tr>
+
+					<!-- l -->	
+					<tr>
+					<td>12. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/l.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">l</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>l</b> is a pronounced similiar to the english <b>[l]</b> in <i>long</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>l</u>ama  </td>
+						<td>[lama] </td>
+						<td><i>old</i> </td>
+					</tr>
+					
+					<!-- m -->
+					<tr>
+					<td>13. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/m.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">m</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>m</b> is a pronounced similiar to the english <b>[m]</b> in <i> man</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>m</u>akan  </td>
+						<td>[makan] </td>
+						<td><i>Eat</i> </td>
+					</tr>
+					
+					<!-- n -->
+					<tr>
+					<td>14. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/n.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">n</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>n</b> is a pronounced similiar to the english <b>[n]</b> in <i>next</i>.</td>     
+					</tr>
+					
+					<tr>
+						<td>&nbsp;</td>
+						<td >n<u>o</u>na  </td>
+						<td>[nona] </td>
+						<td><i>Miss</i> </td>
+					</tr>
+
+					<!-- o -->
+					<tr>
+					<td>15. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/o.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">o</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>o</b> is a pronounced similiar to the english <b>[o]</b> in <i>go</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >t<u>o</u>k<u>o</u>  </td>
+						<td>[toko] </td>
+						<td><i>Store</i> </td>
+					</tr>
+					
+					<!-- p -->
+					<tr>
+					<td>16. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/p.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">p</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>p</b> is a pronounced similiar to the english <b>[p]</b> in <i>stop</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >ra<u>p</u>at </td>
+						<td>[rapat] </td>
+						<td><i>Meeting</i> </td>
+					</tr>
+					
+					
+					<!-- Q -->
+					<tr>
+					<td>17. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/q.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">q</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>q</b> is a pronounced similiar to the english <b>[q]</b> in <i>quality</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td ><u>q</u>uran  </td>
+						<td>[qur'an] </td>
+						<td><i>The Quran</i> </td>
+					</tr>		
+					
+					<!-- r -->
+					<tr>
+					<td>18. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/r.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">r</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>r</b> is a pronounced similiar to the english <b>[r]</b> in <i>read</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >ma<u>r</u>i  </td>
+						<td>[mari] </td>
+						<td><i>Let's<i> </td>
+					</tr>
+					
+					<!-- s -->
+					<tr>
+					<td>19. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/s.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">s</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>s</b> is a pronounced similiar to the english <b>[s]</b> in <i>soft</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td >ru<u>s</u>a  </td>
+						<td>[rusa] </td>
+						<td><i>Deer</i> </td>
+					</tr>
+					
+					<!-- t -->
+					<tr>
+					<td>20. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/t.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">t</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>t</b> is a pronounced similiar to the english <b>[t]</b> in <i>put</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >t<u>u</u>lis  </td>
+						<td>[tulis] </td>
+						<td><i>Write</i> </td>
+					</tr>	
+					
+					<!-- u -->
+					<tr>
+					<td>21. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/u.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">u</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>u</b> is a pronounced similiar to the english <b>[u]</b> in <i>pool</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >bar<u>u</u>  </td>
+						<td>[baru] </td>
+						<td><i>New</i> </td>
+					</tr>
+					
+					<!-- v -->
+					<tr>
+					<td>22. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/v.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">v</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>v</b> is a pronounced similiar to the english <b>[f]</b> in <i>finish</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td ><u>v</u>akum  </td>
+						<td>[vakum] </td>
+						<td><i>Vacuum</i> </td>
+					</tr>
+					
+					<!-- w -->
+					<tr>
+					<td>23. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/w.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">w</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>w</b> is a pronounced similiar to the english <b>[w]</b> in <i>why</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td ><u>w</u>ilayah  </td>
+						<td>[wilayah] </td>
+						<td><i>region</i> </td>
+					</tr>
+					
+					<!-- x -->
+					<tr>
+					<td>24. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/x.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">x</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>x</b> is a pronounced similiar to the english <b>[x]</b> in <i>xylophone</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td >e<u>x</u>it  </td>
+						<td>[exit] </td>
+						<td><i>Keluar</i> </td>
+					</tr>
+					
+					<!-- y -->
+					<tr>
+					<td>25. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/y.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">y</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>y</b> is a pronounced similiar to the english <b>[y]</b> in <i>year</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >a<u>y</u>ah  </td>
+						<td>[ayah] </td>
+						<td><i>Father</i> </td>
+					</tr>
+					
+					<!-- z -->
+					<tr>
+					<td>26. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/z.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">z</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>z</b> is a pronounced similiar to the english <b>[z]</b> in <i>zero</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td ><u>z</u>aman  </td>
+						<td>[zaman] </td>
+						<td><i>Era</i> </td>
+					</tr>
+					
+					<tr>
+					<td>27. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">ng</button>
+		  			</div>
+					</td>
+					</tr>
+
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>ng</b> is a pronounced similiar to the english <b>[ng]</b> in <i>long</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >i<u>ng</u>at  </td>
+						<td>[ingat] </td>
+						<td><i>Remember</i> </td>
+					</tr>
+					
+					
+					<tr>
+					<td>28. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">ny</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>ny</b> is a pronounced similiar to the english <b>[ny]</b> in <i>new</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td >ta<u>ny</u>a  </td>
+						<td>[tanya] </td>
+						<td><i>ask</i> </td>
+					</tr>
+					
+					<tr>
+					<td>29. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">kh</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>kh</b> is a pronounced similiar to the english <b>[x]</b>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >muta<u>kh</u>ir  </td>
+						<td>[mutakhir] </td>
+						<td><i>Modern</i> </td>
+					</tr>
+					
+					<tr>
+					<td>30. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">sy</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>sy</b> is a pronounced similiar to the english <b>[sy]</b> in <i>shoot</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td ><u>sy</u>ukur  </td>
+						<td>[syukur] </td>
+						<td><i>Grace</i> </td>
+					</tr>
+					
+					<tr>
+					<td>31. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">ai</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>ai</b> is a pronounced as a dipthong  similiar to the english y<b>[ay]</b> in <i>my</i>.</td>     
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >bad<u>ai</u>  </td>
+						<td>[badai] </td>
+						<td><i>storm</i> </td>
+					</tr>
+					
+					<tr>
+					<td>&nbsp; </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">ai</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2">In between two consonnants,<b>ai</b> is not a dipthong but is two separate sounds.</td> 
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >b<u>ai</u>k </td>
+						<td>[baik] </td>
+						<td><i>good</i> </td>
+					</tr>	
+					
+					
+					<tr>
+					<td>32. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">au</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp; </td>
+						<td colspan="2"><b>au</b> is a pronounced as a dipthong  similiar to the english Ow<b>[aw]</b> in <i>cow</i>.</td>     
+					</tr>
+					<tr>
+					
+					</tr>
+						<td>&nbsp;</td>
+						<td >wal<u>au</u>  </td>
+						<td>[walau] </td>
+						<td><i>eventhough</i> </td>
+					</tr>		
+					
+					<tr>
+					<td>&nbsp; </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">au</button>
+		  			</div>
+					</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2">In closed syllable and some others words, <b>au</b> is two separate short sounds.</td> 
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td >b<u>ai</u>k </td>
+						<td>[baik] </td>
+						<td><i>good</i> </td>
+					</tr>	
+					
+					
+					<tr>
+					<td>33. </td>
+					<td colspan="3" align="center"><audio id="demo" src="../menu_sound/test.mp3"></audio>
+					<div>
+						<button class="ui-btn ui-icon-audio ui-btn-icon-left" onclick="document.getElementById('demo').play()">oy</button>
+		  			</div>
+					</td>
+					</tr>
+					
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="2"><b>oi</b> is a pronounced similiar to the english <b>[oy]</b> in <i>boy</i>.</td>     
+					</tr>
+					</tr>
+						<td>&nbsp;</td>
+						<td >sep<u>oi</u>  </td>
+						<td>[sepoi] </td>
+						<td><i>Breezy</i> </td>
+					</tr> 
+					
+					</tbody>
+				</table>
+			</div>
+			
+				
+				
+		
+	
+		<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right">
+			<h3>Stress and Intonation Pattern</h3>
+				<p align="jusify">The stress position in Indonesian is relative fixed . The stress usually falls on penultimate syllabe , the syllabe before last</p>
+				<table style="width:300px">
+						<tr>
+						  <td>bela</td>
+						  <td>b&#233;la</td>		
+						  <td>defend</td>
+						  </tr>
+						<tr>
+						  <td>pembelaan</td>
+						  <td>pembel&#225;jaran</td>		
+						  <td>defence</td>
+						</tr>
+						<tr>
+						  <td>taman</td>
+						  <td>t&#225;man</td>		
+						  <td>park</td>
+						</tr>
+				</table> </br>
+				
+				<p align="justify">An ultimate syllabe will be stressed when the penultimate syllable contain week wovel </p>
+				
+				<table style="width:300px">
+						<tr>
+						  <td>belah</td>
+						  <td>belah</td>		
+						  <td>cut</td>
+						  </tr>
+						<tr>
+						  <td>bekerja</td>
+						  <td>bekerja</td>		
+						  <td>work</td>
+						</tr>
+						<tr>
+						  <td>empat</td>
+						  <td>emp&#225;t</td>		
+						  <td>four</td>
+						</tr> 
+				</table> </br>
+			<p align="justify">The intonation if indonesian senteces is determined by initial picth in contour. The Pitch movement patterns ub utterance
+			are as follows.</p>
+				
+		</div>
+	</div>
+	</div>
+		<div data-role="footer" data-position="fixed">
+			<center><font size="-5">Copyright@2014 Learn Bahasa</font></center>
+		</div>
+	</div>
+
+	</body>
+</html>
