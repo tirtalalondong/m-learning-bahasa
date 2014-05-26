@@ -44,6 +44,7 @@
 	
 <script type="text/javascript">
 	function exitPoxi(){
+	/*
     $(document).on("pageinit", "#home", function (event) {
         $(document).on('click', '#exit', function (e) {
             if ( $('.ui-page-active').attr('id') == 'home') {
@@ -52,8 +53,18 @@
                 history.back();             
             }
         }, false);             
-    });
+    });*/
+		$document.addEventListener("backbutton", function(e){
+			if($.mobile.activePage.is('#homeLesson')){
+				e.preventDefault();
+				navigator.app.exitApp();
+			}
+			else {
+				navigator.app.backHistory()
+			}
+		}, false);
 	}
+	
 </script>
 	
 </head>
@@ -71,7 +82,7 @@
 						<li><a href="menu_informasi.html" rel="external">Information</a></li>
 						<li><a href="menu_glosarium.html" rel="external">Glosarium</a></li>
 						<li><a href="#help">Help</a></li>
-						<li><a href="#" onClick="exitPoxi();">Exit</a></li>
+						<li><a id ="backbutton" onClick="exitPoxi()">Exit</a></li>
 					</ul>
 				</div>
 			<div data-role="footer" data-position="fixed">
