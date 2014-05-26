@@ -21,21 +21,22 @@
 	
 		var myScroll;
 		function loaded() {
-				myScroll = new iScroll('help', { zoom:true });
+				myScroll = new iScroll('content', { zoom:true });
 			}
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		document.addEventListener('DOMContentLoaded', loaded, false);
 	</script>
 <!-- End Zoom -->
 
-	<!--<style type="text/css" media="all">
-	/*	
+	<style type="text/css" media="all">
+	
 		#wrapper {
-			//position:relative;
+			position:relative;
 			z-index:1;
 			overflow:auto;
 		}
-		
+	</style>
+	<!--
 		#scroller {
 			position:relative;
 			//z-index:1;
