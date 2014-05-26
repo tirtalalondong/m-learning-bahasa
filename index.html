@@ -10,36 +10,39 @@
 	<link rel="stylesheet"  href="css/theme_pink.min.css" />
 	
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.2.js"></script>
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>	
+	
 	
 	<script type="application/javascript" src="js/zoom/iscroll.js"></script>
 	
 <!-- Zoom -->
 	<script type="text/javascript">
+	/*
 		var myScroll;
 		function loaded() {
-				myScroll = new iScroll('wrapper', { zoom:true });
+				myScroll = new iScroll('help', { zoom:true });
 			}
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		document.addEventListener('DOMContentLoaded', loaded, false);
-	</script>
+	</script>*/
 <!-- End Zoom -->
 
 	<style type="text/css" media="all">
-		
+	/*	
 		#wrapper {
 			//position:relative;
 			z-index:1;
 			overflow:auto;
 		}
-		/*
+		
 		#scroller {
 			position:relative;
 			//z-index:1;
 			-webkit-touch-callout:none;
 			-webkit-tap-highlight-color:rgba(0,0,0,0);
-		}*/
-		document.addEventListener("touchstart", function(){}, false);
+		}
+		*/
 	</style>
 	
 <script type="text/javascript">
@@ -80,13 +83,14 @@
 		</div>
 		
 		<div id="help" data-role="page" data-theme="a" data-position="fixed">	
+		
 			<div data-role="header" data-position="fixed">
 				<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-back">Back</a>
 					<h1>Learn Bahasa</h1>
 			</div>
 
 			<div data-role="content" data-position="fixed">
-				<div id="wrapper">
+				
 					<h2> Help </h2>
 						<p> Learn Bahasa consist of dialogues, vocabulary and expresion , grammar explanation, culture notes and Quiz.</p>
 						<p> The materials presented are : </br>
@@ -104,13 +108,14 @@
 							<li>Menu Information : This menu contains information about Indonesia, such as culture, tourism, people, and others</li></br>
 							<li><i>Glossary: if there is Indonesian words you do not understand, you can search for the meaning of the word in this menu </li></br>					
 						</ul>	
-				</div>
+				
 			</div>
 			
 			<div data-role="footer" data-position="fixed">
 				<center><font size="-5">Copyright @ 2014 Learn Bahasa</font></center>
 			</div>
 		</div>
+	
 	</div>
 	</body>
 </html>
